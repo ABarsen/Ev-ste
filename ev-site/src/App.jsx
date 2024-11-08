@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Background from "./components/Background/Background";
 import NavBar from "./components/NavBar/NavBar";
-import Hero from "./components/Hero/Hero";
+// import Hero from "./components/Hero/Hero";
 const App = () => {
 
   const heroData = [
@@ -16,13 +16,15 @@ const App = () => {
     <div>
     <NavBar/>
       <Background playStatus = {playStatus} heroCount = {heroCount}/>
-     <Hero 
+     {/* this hero component was giving me an error */}
+     {/* <Hero 
      setPlayStatus={setPlayStatus}
      heroData ={heroData [heroCount]}
      heroCount ={heroCount}
      setHeroCount ={setHeroCount}
-     playStatus ={PlayStatus}
-     />
+     playStatus ={playStatus}
+     /> */}
+
     </div>
   )
 }
