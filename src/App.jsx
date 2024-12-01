@@ -10,8 +10,8 @@ const App = () => {
     { text1: "Give in to", text2: "Your passions" },
   ];
 
-  const [heroCount, setHeroCount] = useState(2);
-  const [playStatus, setPlayStatus] = useState(false);
+  const [heroCount, setHeroCount] = useState(4);
+  const [playStatus, setPlayStatus] = useState(true);
 
   return (
     <div>
