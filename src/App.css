@@ -1,4 +1,10 @@
-background {
-    z-index: -1;
-    display: block;
+.app {
+    position: relative;
+    min-height: 100vh;
+    color: white;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* This ensures content appears above the background */
 }

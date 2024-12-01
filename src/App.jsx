@@ -10,25 +10,24 @@ const App = () => {
     { text1: "Give in to", text2: "Your passions" },
   ];
 
-  const [heroCount, setHeroCount] = useState(4);
-  const [playStatus, setPlayStatus] = useState(true);
+  const [heroCount, setHeroCount] = useState(0);
+  const [playStatus, setPlayStatus] = useState(false);
 
   return (
-    <div>
-      <NavBar />
+    <div className="app">
       <Background playStatus={playStatus} heroCount={heroCount} />
-      {/* If you want to use the Hero component, uncomment the component below */}
-      <Hero 
-        setPlayStatus={setPlayStatus}
-        heroData={heroData[heroCount]}
-        heroCount={heroCount}
-        setHeroCount={setHeroCount}
-        playStatus={playStatus}
-      />
+      <div className="content">
+        <NavBar />
+        <Hero 
+          setPlayStatus={setPlayStatus}
+          heroData={heroData[heroCount]}
+          heroCount={heroCount}
+          setHeroCount={setHeroCount}
+          playStatus={playStatus}
+        />
+      </div>
     </div>
-    
   );
-  
 };
 
 export default App;

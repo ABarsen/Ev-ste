@@ -5,6 +5,7 @@
     color: whitev;
     z-index: -1;
     background-color: blue;
+    /* position: fixed; */
 }
 .nav-logo {
     font-family: sans-serif;
