@@ -35,7 +35,7 @@ const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) 
             src={playStatus ? pause_icon : play_icon}
             alt=" click me"
           />
-          <p>see the video</p>
+          <p> press the button to see the video</p>
         </div>
       </div>
     </div>

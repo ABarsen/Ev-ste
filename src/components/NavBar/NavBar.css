@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: whitev;
+    color: white;
     z-index: -1;
     background-color: blue;
     /* position: fixed; */
